@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 Assignment 1</title>
+</head>
+<body>
+    <script>
+        console.log("_______Question 1 Solution_________")
+        // Below case + operator acts as concatenation, so it combines it produces result as 122.
+        console.log(1 + "2" + "2");
+
+        // Below case + operator before the string converts it to a number, So it is 1++2=3 
+        // and next + operator concatenates 2 with 3, resulting 32 as output.
+        console.log(1 + +"2" + "2");
+
+        // Below case - operator before the string converts it to a number, So it is 1+-1=> 1-1=0
+        // and next + operator concatenates 2 with 0, resulting 02 as output.
+        console.log(1 + -"1" + "2");
+
+        // Below case + operator before the string converts it to a number, So it is 1.
+        // and next + operators concatenates 1 with 1 and 2, resulting 112 as output.
+        console.log(+"1" + "1" + "2");
+
+        //  Below case operator expect "+" on string then it will display "NaN"
+        // And if you used "+" then it will concatenate two string as "+" means concatenation
+        // So "A"-"B" will be "NaN" and concate(+) 2 will produce NaN2 as output.
+        console.log( "A" - "B" + "2");
+
+
+        //  Below case operator expect "+" on string then it will display "NaN"
+        // And if you used "+" then it will concatenate two string as "+" means concatenation
+        // So "A"-"B" will be "NaN" and + before 2 is a number..So Nan will not concatenate with 2 
+        // resulting Nan as output.
+        console.log( "A" - "B" + 2);
+
+
+        console.log("_______Question 2 Solution_________")
+        var marks=80;
+
+        if (marks>90)
+        {
+            console.log("AA")
+        }
+        else if(marks>80 && marks<=90)
+        {
+            console.log("AB")
+        }
+        else if(marks>70 && marks<=80)
+        {
+            console.log("BB")
+        }
+        else if(marks>60 && marks<=70)
+        {
+            console.log("BC")
+        }
+        else if(marks>50 && marks<=60)
+        {
+            console.log("CC")
+        }
+        else if(marks>40 && marks<=50)
+        {
+            console.log("CD")
+        }
+        else if(marks>30 && marks<=40)
+        {
+            console.log("DD")
+        }
+        else{
+            console.log("FF")
+        }
+
+    </script>
+</body>
+</html>
